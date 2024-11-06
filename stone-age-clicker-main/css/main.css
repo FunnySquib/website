@@ -1,0 +1,252 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #ccc;
+}
+
+form, table {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+img {
+    border: 0;
+}
+
+#game_box {
+    position: relative;
+    width: 900px;
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#paused {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    font-family: "BebasNeue", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-shadow: 0 1px 5px #000;
+    color: #fff;
+}
+
+#paused div {
+    padding: 80px 0 12px;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+#paused span {
+    display: inline-block;
+    width: 20px;
+    padding-top: 20px;
+    height: 0;
+    overflow: hidden;
+    vertical-align: middle;
+    background: url(../img/p.png) no-repeat;
+}
+
+#save_overlay {
+    display: none;
+}
+
+.center_outer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.center_middle {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 248px;
+}
+
+.center_inner {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    right: 0;
+    height: 248px;
+}
+
+#save_menu {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+    border: 4px solid #664828;
+    background: url(../img/box_bg.png);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.75);
+}
+
+#save {
+    position: relative;
+    width: 640px;
+    height: 240px;
+    margin: 0 auto;
+    border: 4px solid #664828;
+    background: url(../img/box_bg.png);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.75);
+}
+
+#load {
+    position: relative;
+    width: 640px;
+    height: 240px;
+    margin: 0 auto;
+    border: 4px solid #664828;
+    background: url(../img/box_bg.png);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.75);
+}
+
+#save .description,
+#load .description {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 640px;
+    height: 50px;
+    line-height: 50px;
+    font-family: "BebasNeue", Arial, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+#save .copy_text,
+#load .copy_text {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    width: 600px;
+    height: 120px;
+}
+
+#save .copy_text textarea,
+#load .copy_text textarea {
+    width: 596px;
+    height: 116px;
+    border: 2px solid #ccc;
+    background: #333;
+    color: #ccc;
+    font-size: 12px;
+    font-family: monospace;
+}
+
+#done_button {
+    left: 284px;
+    top: 190px;
+}
+
+#load_button {
+    left: 238px;
+    top: 190px;
+}
+
+#cancel_button {
+    left: 330px;
+    top: 190px;
+}
+
+#done_button:active,
+#load_button:active,
+#cancel_button:active {
+    top: 192px;
+}
+
+.big_button {
+    display: block;
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    background: url(../img/big_button.png) no-repeat 0px 0px;
+    font-family: "BebasNeue", Arial, sans-serif;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 5px #000;
+    text-decoration: none;
+}
+
+.big_button:hover {
+    background: url(../img/big_button.png) no-repeat 0px -50px;
+}
+
+.button {
+    display: block;
+    position: absolute;
+    width: 72px;
+    height: 36px;
+    line-height: 36px;
+    background: url(../img/button.png) no-repeat 0px 0px;
+    font-family: "BebasNeue", Arial, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 5px #000;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: url(../img/button.png) no-repeat 0px -36px;
+}
+
+#open_save_button {
+    left: 60px;
+    top: 25px;
+}
+
+#open_save_button:active {
+    top: 27px;
+}
+
+#open_load_button {
+    left: 60px;
+    top: 95px;
+}
+
+#open_load_button:active {
+    top: 97px;
+}
+
+#cancel_load_button {
+    left: 60px;
+    top: 165px;
+}
+
+#cancel_load_button:active {
+    top: 167px;
+}
+
+#loading {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: url(../img/logo.png) no-repeat center center;
+}
+
+#fps {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    color: #000;
+    opacity: 0.5;
+}
