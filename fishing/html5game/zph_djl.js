@@ -61,11 +61,21 @@ function dj_loading_get_height() { return dj_loading_height; }
 
 ///
 
+var showBH5Icon = false;
 var loadingBg = document.getElementById('img_loadingbg');
 var loadingIcon = document.getElementById('img_loadingicon');
 var loadingLogoIcon = document.getElementById('img_loadinglogoicon');
 var loadingBar = document.getElementById('img_loadingbar');
 var loadingBarOverlay = document.getElementById('img_loadingbaroverlay');
+
+if (showBH5Icon == false)
+{
+      loadingLogoIcon.style.display        ="none";
+      loadingLogoIcon.style.visibility     ="hidden";
+      loadingLogoIcon.style.pointerEvents  = 'none';
+      loadingLogoIcon.parentNode.removeChild(loadingLogoIcon);
+      loadingLogoIcon = null;
+}
 function dj_loading(ctx, width, height, total, current, _) 
 {
 	//
