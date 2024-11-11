@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <link rel="icon" type="image/x-icon" href="/images/blacklogo.png"> 
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&amp;display=swap" rel="stylesheet">
+    <title>Broken Games</title>
+    <style>
+        #logo {
+            display: flex;
+            justify-content: left;
+        }
+        body {
+            background-image: url("/images/REELbackground.jpg");
+            margin: 0; /* Remove default margin */
+        }
+        
+        
+        #gamesandshit {
+            display: flex; /* Use flexbox for layout */
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            justify-content: center; /* Center items horizontally */
+            padding: 10px; /* Add padding around the container */
+        }
+        #gamesandshit img {
+            width: 150px; /* Set a fixed width for images */
+            height: 150px; /* Set a fixed height for images */
+            border-radius: 15%;
+            margin: 10px; /* Add margin for spacing */
+            flex-shrink: 0; /* Prevent images from shrinking */
+        }
+        #bottom {
+            text-align: center; /* Center text in bottom div */
+            width: 100%; /* Full width */
+        }
+        p {
+            font-size: 30px;
+        }
+    h1 {
+    font-family: 'Nunito', sans-serif; /* Apply Nunito font */
+    color: white; /* Keep the text color */
+    font-size: 50px; /* Adjust size as needed */
+    margin-top: 20px; /* Space above the heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+    </style>
+    <script type="text/javascript">
+        (function() {
+            if (window.localStorage) {
+                if (!localStorage.getItem('firstLoad')) {
+                    localStorage['firstLoad'] = true;
+                    window.location.reload();
+                } else {
+                    localStorage.removeItem('firstLoad');
+                }
+            }
+        })();
+    </script>
+</head>
+<body>
+    <a id="logo" href="http://squid.hyperphp.com">
+        <img src="/images/whitelogo.png" height="80px" width="80px">
+    </a>
+    <h1 style="color:white;">this is a list of my games that are broken and im trying to fix</h1>
+        <p style="color:white; font-family: 'Nunito', sans-serif;">add me on snap @funnysquid27</p>
+        <center>
+            <div id="gamesandshit">
+                <a href="/earntodie/index.html" target="_blank"><img src="/earntodie/loading.png"></a>
+                <a href="/glass-city/index.html" target="_blank"><img src="/glass-city/image.png"></a>
+                <a href="/among-us/index.html"target="_blank"><img src="/among-us/red.png"></a>
+                <a href="boxing-random/index.html"target="_blank"><img src="boxing-random/512x512.jpg"></a>
+            </div>
+        </center>
+</body>
