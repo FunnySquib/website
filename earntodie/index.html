@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Earn To Die -Unblocked games at school</title>
+<title>Earn To Die</title>
+<meta name="robots" content="noindex,nofollow" />
 <style>
       html {
         box-sizing: border-box;
@@ -97,9 +99,9 @@
 <div class="progress"><div class="full"></div></div>
 </div>
 </body>
-<script src="UnityLoader.js"></script>
+<script src="Build/UnityLoader.js"></script>
 <script>
-  var gameInstance = UnityLoader.instantiate("gameContainer", "EarnToDie.json", {onProgress: UnityProgress});
+  var gameInstance = UnityLoader.instantiate("gameContainer", "Build/EarnToDie.json", {onProgress: UnityProgress});
   function UnityProgress(gameInstance, progress) {
     if (!gameInstance.Module) {
       return;
