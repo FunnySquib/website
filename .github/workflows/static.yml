@@ -22,3 +22,9 @@ jobs:
           protocol: ftp # (or 'sftp' if supported)
           local-dir: ./ # (repo root)
           server-dir: /os.is-great.net/htdocs/ # (your cPanel web root)
+
+ exclude: |
+      - .git*/**
+      - .git**
+      - /dist/**
+      - .env
