@@ -21,4 +21,4 @@ jobs:
           port: 21 # (or the port your host provides)
           protocol: ftp # (or 'sftp' if supported)
           local-dir: ./ # (repo root)
-          server-dir: /public_html/ # (your cPanel web root)
+          server-dir: /os.is-great.net/ # (your cPanel web root)
