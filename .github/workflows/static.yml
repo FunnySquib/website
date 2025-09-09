@@ -15,9 +15,9 @@ jobs:
       - name: Deploy to cPanel via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.ftp.hyperphp.com}}
-          username: ${{ secrets.hp_35151586}}
-          password: ${{ secrets.tucker567}}
+          server: ${{ secrets.FTP_SERVER}}
+          username: ${{ secrets.FTP_USERNAME}}
+          password: ${{ secrets.FTP_PASSWORD}}
           port: 21 # (or the port your host provides)
           protocol: ftp # (or 'sftp' if supported)
           local-dir: ./ # (repo root)
