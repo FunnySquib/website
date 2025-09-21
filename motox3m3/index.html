@@ -13,6 +13,12 @@
     <div id="orientation"></div>
     <div id="loader">Loading ...</div>
 
+    <script type="text/javascript">
+        function showNextAd() {
+            console.log("showNextAd called");
+        }
+    </script>
+
     <script src="assets/lib/jquery-3.1.1.min.js"></script>
     <script src="assets/lib/nape.min.js"></script>
     <script src="assets/lib/easeljs-0.8.2.combined.js"></script>
@@ -24,12 +30,9 @@
     <script src="motox3m3.min.js?ab3b0af36e99447a1a6d"></script>
 
     <script type="text/javascript">
-        // This script will run after all the game scripts have been loaded and parsed.
         (function() {
-            // Poll to find the canvas and game objects
             var checkInterval = setInterval(function() {
                 var canvas = document.querySelector("#content canvas");
-                // "game" is a common global variable for Phaser games.
                 var game = window.game;
 
                 if (canvas) {
@@ -39,10 +42,8 @@
                 if (game && game.isBooted && canvas) {
                     clearInterval(checkInterval);
 
-                    // Set focus to the canvas
                     canvas.focus();
 
-                    // Resume audio on first interaction
                     function resumeAudio() {
                         if (game.sound && game.sound.context && game.sound.context.state === 'suspended') {
                             game.sound.context.resume();
