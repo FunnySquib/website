@@ -1,71 +1,75 @@
-<html lang="en" class="wf-cfcrackbold-n4-active wf-impact-n4-active wf-allerdisplay-n4-active wf-active"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
     <link rel="stylesheet" href="assets/css/app.css" type="text/css">
-    <title>
-        MotoX3M3
-    </title>
+    <title>MotoX3M3</title>
+</head>
+<body>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9nrunKdU5m96PSN1XsSGr3qOP0lvPFUB2AiAylCDlN5DTl17uDFkpQuHj1AFtgWLxpLaiBZuhrtb2WOu7ofHwEAAACKeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A93bovR+QVXNx2/38qDbmeYYf1wdte9EO37K9eMq3r+541qo0byhYU899BhPB7Cv9QqD7wIbR1B6OAc9kEfYCA4AAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><link rel="stylesheet" href="assets/css/AllerDisplay.css" media="all"><link rel="stylesheet" href="assets/css/CfCrackBold.css" media="all"><link rel="stylesheet" href="assets/css/impact.css" media="all"><meta http-equiv="origin-trial" content="A1S5fojrAunSDrFbD8OfGmFHdRFZymSM/1ss3G+NEttCLfHkXvlcF6LGLH8Mo5PakLO1sCASXU1/gQf6XGuTBgwAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
-
-<body aria-hidden="false" style="">
-
+    <div id="content"></div>
     <div id="orientation"></div>
-    <div id="loader" style="display: none;">Loading ...</div>
-   
-    <script type="text/javascript" src="assets/lib/nape.min.js">
-        var nape = "nape.min.js";
-    </script>
-    <script type="text/javascript" src="assets/lib/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="assets/lib/easeljs-0.8.2.combined.js"></script>
-    <script type="text/javascript" src="assets/lib/bluebird.min.js"></script>
-    <script type="text/javascript" src="assets/lib/phaser.min.js"></script>
-    <script type="text/javascript" src="assets/lib/phaser-cachebuster.min.js"></script>
-    <script type="text/javascript" src="assets/lib/phaser-super-storage.min.js"></script>
-    <script type="text/javascript" src="assets/lib/dragonBones.min.js"></script>
-
-
+    <div id="loader">Loading ...</div>
 
     <script type="text/javascript">
-        var useEvents = (typeof(Event) === 'function');
+        document.addEventListener('DOMContentLoaded', function() {
+            var s = document.createElement('script');
+            s.src = 'assets/lib/nape.min.js';
+            document.body.appendChild(s);
 
-        var myDispatchEvent = function (name){
-            var event;
-            if (useEvents){
-                event =  new Event(name);
-            }else{
-                event = document.createEvent('Event');
-                event.initEvent(name, true, true);
+            s = document.createElement('script');
+            s.src = 'assets/lib/jquery-3.1.1.min.js';
+            document.body.appendChild(s);
+
+            s = document.createElement('script');
+            s.src = 'assets/lib/easeljs-0.8.2.combined.js';
+            document.body.appendChild(s);
+
+            s = document.createElement('script');
+            s.src = 'assets/lib/bluebird.min.js';
+            document.body.appendChild(s);
+
+            s = document.createElement('script');
+            s.src = 'assets/lib/phaser.min.js';
+            document.body.appendChild(s);
+
+            s = document.createElement('script');
+            s.src = 'assets/lib/phaser-cachebuster.min.js';
+            document.body.appendChild(s);
+
+            s = document.createElement('script');
+            s.src = 'assets/lib/phaser-super-storage.min.js';
+            document.body.appendChild(s);
+
+            s = document.createElement('script');
+            s.src = 'assets/lib/dragonBones.min.js';
+            document.body.appendChild(s);
+
+            s = document.createElement('script');
+            s.src = 'motox3m3.min.js?ab3b0af36e99447a1a6d';
+            document.body.appendChild(s);
+
+            function setFocus() {
+                var canvas = document.querySelector("#content canvas");
+                if (canvas) {
+                    canvas.focus();
+                }
             }
-            document.getElementById("content").dispatchEvent(event);
-        }
-        
-        
-    </script>
-    <script type="text/javascript">
-        function setFocus() {
-            var canvas = $("#content canvas")[0];
-            canvas.focus();
-        }
-        $(document).ready(function () {
             setTimeout(setFocus, 100);
-        }); 
+
+            function resumeAudio() {
+                if (typeof game !== 'undefined' && game && game.sound && game.sound.context && game.sound.context.state === 'suspended') {
+                    game.sound.context.resume();
+                }
+                document.body.removeEventListener('click', resumeAudio);
+                document.body.removeEventListener('touchstart', resumeAudio);
+            }
+            document.body.addEventListener('click', resumeAudio, true);
+            document.body.addEventListener('touchstart', resumeAudio, true);
+        });
     </script>
 
-<script type="text/javascript" src="motox3m3.min.js?ab3b0af36e99447a1a6d"></script>
-
-<script type="text/javascript">
-    document.body.addEventListener('click', resumeAudio, true);
-    document.body.addEventListener('touchstart', resumeAudio, true);
-    function resumeAudio() {
-        if (game && game.sound && game.sound.context && game.sound.context.state === 'suspended') {
-            game.sound.context.resume();
-        }
-        document.body.removeEventListener('click', resumeAudio);
-        document.body.removeEventListener('touchstart', resumeAudio);
-    }
-</script>
-
-<iframe name="easyXDM_id_xd_api_provider" title="easyXDM_id_xd_api_provider" id="easyXDM_id_xd_api_provider" src="https://cdn.y8.com/Xd/xd_handler.html?version=44&amp;xdm_e=https%3A%2F%2Fstorage.y8.com&amp;xdm_c=id_xd_api&amp;xdm_p=1" frameborder="0" style="position: absolute; top: -2000px; left: 0px;"></iframe><div id="id-root" class="id-reset"></div><iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20250918/r20190131/zrt_lookup_fy2021.html" style="display: none;"></iframe></html>
+</body>
+</html>
