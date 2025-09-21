@@ -47,8 +47,8 @@
     </script>
     <script type="text/javascript">
         function setFocus() {
-            var iframe = $("#game")[0];
-            iframe.contentWindow.focus();
+            var canvas = $("#content canvas")[0];
+            canvas.focus();
         }
         $(document).ready(function () {
             setTimeout(setFocus, 100);
